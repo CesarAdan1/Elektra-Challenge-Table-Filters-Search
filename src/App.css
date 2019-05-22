@@ -6,55 +6,18 @@ body {
   background: #EAEDED;
 }
 /* Filter Stack */
-.stack-container {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+tbody tr:nth-child(odd) {
+  background: #ff3ccf;
 }
 
-.stack-container:hover input ~ .checkbox-space {
-
+tbody tr:nth-child(even) {
+  background: #e495e4
 }
 
-.stack-container input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  height: 0; 
-}
-
-.stack-container input:checked ~.checkbox-space {
-  background: #2196F3;
-}
-
-.checkbox-space:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-.stack-container input:checked ~.checkbox-space:after {
-  display: block;
-}
-
-.stack-container .checkbox-space:after {
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
+.table-container {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
 }
 /* FilterSearch */
 

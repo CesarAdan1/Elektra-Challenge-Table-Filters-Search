@@ -1,126 +1,82 @@
 *, *::before, *::after{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
   
   body {
     background: #EAEDED;
   }
-  /* Filter stack */
-  .checkbox-container {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  
-  /* Hide the browser's default checkbox */
-  .checkbox-container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-  }
-  
-  /* Create a custom checkbox */
-  .checkbox-space {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #eee;
-  }
-  
-  /* On mouse-over, add a grey background color */
-  .checkbox-container:hover input ~ .checkbox-space {
-    background-color: #ccc;
-  }
-  
-  /* When the checkbox is checked, add a blue background */
-  .checkbox-container input:checked ~ .checkbox-space {
-    background-color: #2196F3;
-  }
-  
-  /* Create the checkbox-space/indicator (hidden when not checked) */
-  .checkbox-space:after {
-    content: "";
-    position: absolute;
-    display: none;
-  }
-  
-  /* Show the checkbox-space when checked */
-  .checkbox-container input:checked ~ .checkbox-space:after {
-    display: block;
-  }
-  
-  /* Style the checkbox-space/indicator */
-  .checkbox-container .checkbox-space:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
 
-  /* FilterSearch */
-.topnav .search-container {
-  float: right;
+/* Table */
+.container {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  padding: 20px 20px 20px 20px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
-.topnav input[type=text] {
-  padding: 6px;
-  margin-top: 8px;
-  font-size: 17px;
-  border: none;
+.container td, .container th {
+  border: 1px solid #ddd;
+  padding: 10px;
 }
 
-.topnav .search-container button {
-  float: right;
-  padding: 6px 10px;
-  margin-top: 8px;
-  margin-right: 16px;
-  background: #ddd;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
+.container tr:nth-child(even){
+
+  background-color: #f2f2f2;
 }
 
-.topnav .search-container button:hover {
-  background: #ccc;
+.container tr:hover {
+  
+  background-color: #ddd;
 }
 
-  /* Table */
+.container th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #4CAF50;
+  color: white;
+}
 
-.customers {
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-.customers td, .customers th {
-    border: 1px solid #ddd;
-    padding: 8px;
-  }
-  
-.customers tr:nth-child(even){background-color: #f2f2f2;}
-  
-.customers tr:hover {background-color: #ddd;}
-  
-.customers th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: gray;
-    color: white;
-  }
+/* FilterSearch */
+input[type=text] {
+  width: 140px;
+  height: 30px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background: #EAEDED; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 12px;
+  -webkit-transition: width 0.6s ease-in-out;
+  transition: width 0.6s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 50%;
+  background-color: white;
+}
+
+.header-navigation-area {
+  margin-top: 5px;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+p {
+  font-family: arabic-indic;
+  margin-top: 10px;
+  font-size: 16px;
+
+}
+
+p input {
+  margin-right: 5px;
+  font-size: 100px
+}

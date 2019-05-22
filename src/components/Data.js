@@ -1,4 +1,4 @@
-const jsonobj = [
+const data = [
     {
         "key": 1,
         "nombre": "Super Mario Maker 2",
@@ -15,7 +15,7 @@ const jsonobj = [
         "key": 3,
         "nombre": "Echo Dot(3ª generación)",
         "descripcion": "Alexa, tela de color antracita",
-        "onStack": true
+        "onStack": false
     },
     {
         "key": 4,
@@ -211,4 +211,4 @@ const jsonobj = [
     }
   ]
 
-export default jsonobj;
+export default data;
