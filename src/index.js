@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import data from './components/Data';
+import data from './components/Data.json';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
