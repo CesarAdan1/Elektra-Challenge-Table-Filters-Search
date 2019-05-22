@@ -10,7 +10,13 @@ export default class CompleteTable extends Component {
         const rows = [];
     
         this.props.data.forEach((element) => {
-          if (element.nombre.toLowerCase().indexOf(filterText) === -1 && element.descripcion.toLowerCase().indexOf(filterText) === -1) {
+          if (element.nombre.toLowerCase().indexOf(filterText) === -1 &&
+          element.nombre.indexOf(filterText) === -1 && 
+          element.nombre.toUpperCase().indexOf(filterText) === -1
+          && element.descripcion.toLowerCase().indexOf(filterText) === -1 &&
+          element.descripcion.indexOf(filterText) === -1 && 
+          element.descripcion.toUpperCase().indexOf(filterText) === -1
+          ) {
             return;
           }
           if (isInStock && !element.onStack) {
