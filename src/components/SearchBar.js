@@ -31,7 +31,6 @@ class SearchBar extends Component {
                   checked={this.props.isInStock}
                   onChange={this.availableInStock}
                 />
-                {''}
                 Checar disponibilidad en Tienda
               </p>
             </form>

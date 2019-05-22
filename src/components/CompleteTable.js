@@ -6,7 +6,6 @@ export default class CompleteTable extends Component {
     render() {
         const filterText = this.props.filterText;
         const isInStock = this.props.isInStock;
-    
         const rows = [];
     
         this.props.data.forEach((element) => {
